@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-9">
+      <%= form_for(@tweet, :html => {class: "form-horizontal", role: "form"}) do |f| %>
+        <br><br>
+        <div class="form-group">
+          <%= f.label :content %>
+          <%= f.text_field :content, class: "form-control", placeholder: "Let's tweet!" %>
+        </div>
+        <button type="submit" class="btn ncolor" style="background-color: #1DA1F2;">Submit</button>
+      <% end %>
+    </div>
+  </div>
+</div>

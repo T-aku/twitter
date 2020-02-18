@@ -1,0 +1,13 @@
+<h1 align="center">User</h1>
+
+<% @users.each do |user| %>
+  <div class="row">
+    <div class="col-sm-6 offset-md-3">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text"><%= user.name %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

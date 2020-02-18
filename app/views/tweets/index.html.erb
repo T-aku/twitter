@@ -1,0 +1,16 @@
+<h1 align="center">Tweet</h1>
+
+<% @tweets.each do |tweet| %>
+<div class="row">
+  <div class="col-sm-6 offset-md-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text"><%= tweet.content %></p>
+        <%= link_to 'Edit', edit_tweet_path(tweet), class: "btn btn-primary" %>
+        <%= link_to 'Delete', tweet_path(tweet), method: :delete, class: "btn btn-primary" %>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
